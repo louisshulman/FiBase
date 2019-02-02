@@ -31,44 +31,94 @@
         </div>
     </nav>
 
-    <div class="main">
-    <div id="formm" class="container">
-        <h2>Enter Your Financials</h2>
-        <form id="myForm" class="form-group"> 
-            <div class="form-row">
-                <div class="col">
-                <a>Enter x <input id="x" type="number" class="form-control" placeholder="x" name="first_number"></a>
+<div class="main">
+    <div class="formsss">
+        <p>Fill out the assets, liabilities, and equity forms and the functions will output financial data</p>
+
+        <div id="Assets" class="container">
+            <h2>Enter The Assets</h2>
+            <form id="AssetsForm" class="form-group"> 
+                <div class="form-row">
+                    <div class="col">
+                    <a>Enter Cash<input id="cash" type="number" class="form-control" placeholder="x" name="first_number"></a>
+                    </div>
+                    <div class="col">
+                    <a>Enter Equipment<input id="equipment" type="number" class="form-control" placeholder="y" name="first_number"></a>
+                    </div>
                 </div>
-                <div class="col">
-                <a>Enter y <input id="y" type="number" class="form-control" placeholder="y" name="first_number"></a>
+                <div class="form-row">
+                    <div class="col">
+                        <a>Enter Accounts Recievable<input id="accRec" type="number" class="form-control" placeholder="z" name="first_number"></a>
+                    </div>
+                    <div class="col">
+                        <a>Enter Supplies<input id="supplies" type="number" class="form-control" placeholder="w" name="first_number"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col">
-                    <a>Enter z <input id="z" type="number" class="form-control" placeholder="z" name="first_number"></a>
+                    <button id="topform" type="submit" class="btn btn-outline-secondary">Submit</button>
+            </form>
+        </div>
+
+        <div id="Liabilities" class="container">
+            <h2>Enter The Liabilities</h2>
+            <form id="LiabilitiesForm" class="form-group"> 
+                <div class="form-row">
+                    <div class="col">
+                    <a>Enter Notes Payable<input id="nPayable" type="number" class="form-control" placeholder="x" name="first_number"></a>
+                    </div>
+                    <div class="col">
+                    <a>Enter Accounts Payable<input id="aPay" type="number" class="form-control" placeholder="y" name="first_number"></a>
+                    </div>
                 </div>
-                <div class="col">
-                    <a>Enter w <input id="w" type="number" class="form-control" placeholder="w" name="first_number"></a>
+                <div class="form-row">
+                    <div class="col">
+                        <a>Enter ...<input id="LiC" type="number" class="form-control" placeholder="z" name="first_number"></a>
+                    </div>
+                    <div class="col">
+                        <a>Enter ...<input id="LiD" type="number" class="form-control" placeholder="w" name="first_number"></a>
+                    </div>
                 </div>
-            </div>
-                <button id="topform" type="submit" class="btn btn-outline-secondary">Submit</button>
-        </form>
-    </div>
-    
-    <div id="team" class="container">      
-        <h2>Team</h2>
-        <div class="row">
-            <div class="col-md">
-                <h3>Louis Shulman</h3>
-                <img src="assets/placeholder-person.png">
-            </div>
-            <div class="col-md">
-                <h3>Josh Chima</h3>
-                <img src="assets/placeholder-person.png">
+                    <button id="topform" type="submit" class="btn btn-outline-secondary">Submit</button>
+            </form>
+        </div>
+
+        <div id="Equity" class="container">
+            <h2>Enter The Equity Values</h2>
+            <form id="EquityForm" class="form-group"> 
+                <div class="form-row">
+                    <div class="col">
+                    <a>Enter ...<input id="EqA" type="number" class="form-control" placeholder="x" name="first_number"></a>
+                    </div>
+                    <div class="col">
+                    <a>Enter ...<input id="EqB" type="number" class="form-control" placeholder="y" name="first_number"></a>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <a>Enter ...<input id="EqC" type="number" class="form-control" placeholder="z" name="first_number"></a>
+                    </div>
+                    <div class="col">
+                        <a>Enter ...<input id="EcD" type="number" class="form-control" placeholder="w" name="first_number"></a>
+                    </div>
+                </div>
+                    <button id="topform" type="submit" class="btn btn-outline-secondary">Submit</button>
+            </form>
+        </div>
+        
+        <div id="team" class="container">      
+            <h2>Team</h2>
+            <div class="row">
+                <div class="col-md">
+                    <h3>Louis Shulman</h3>
+                    <img src="assets/placeholder-person.png">
+                </div>
+                <div class="col-md">
+                    <h3>Josh Chima</h3>
+                    <img src="assets/placeholder-person.png">
+                </div>
             </div>
         </div>
     </div>
-    </div>
+</div>
     
 
     <!-- Optional JavaScript -->
