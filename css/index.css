@@ -1,3 +1,7 @@
-body{
+body {
     font-family: 'Oswald', sans-serif;
+}
+
+#team < h2 {
+    text-align: center;
 }
