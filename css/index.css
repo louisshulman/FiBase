@@ -4,4 +4,5 @@ body {
 
 #team {
     text-align: center;
+    display: inline-block;
 }
