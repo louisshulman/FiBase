@@ -17,6 +17,7 @@ shortterm_debt = input()
 longterm_debt = input()
 
 #Equity
+Stock = input()
 
 
 def Assets(c, accr, inv, pree, lndc, bldc, eqmtc):
