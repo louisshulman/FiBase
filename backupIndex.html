@@ -35,15 +35,28 @@
 </nav>
 
 <div class="main">
-    <div id="Assets" class="container">
-            <h2 id="fHeader">Enter the Net Cash Flows</h2>
+    <div class="formsss">
+        <div id="Assets" class="container">
+            <h2 id="fHeader">Enter the Net Cash Flow For the Past Five Years</h2>
             <form id="cashForm" class="form-group"> 
                 <div class="form-row">
                     <div class="col">
-                        <a>Cash Flows (Separate entries by commas)<input id="cFlows" type="text" class="form-control" placeholder="0,0,0,0" name="cFlows" required></a>
+                        <a>2019<input id="x2019" type="number" class="form-control" placeholder="0" name="x2019" required></a>
+                    </div>
+                    <div class="col">
+                        <a>2018<input id="x2018" type="number" class="form-control" placeholder="0" name="x2018" required></a>
+                    </div>
+                    <div class="col">
+                        <a>2017<input id="x2017" type="number" class="form-control" placeholder="0" name="x2017" required></a>
                     </div>
                 </div>
                 <div class="form-row">
+                    <div class="col">
+                        <a>2016<input id="x2016" type="number" class="form-control" placeholder="0" name="x2016" required></a>
+                    </div>
+                    <div class="col">
+                        <a>2015<input id="x2015" type="number" class="form-control" placeholder="0" name="x2015" required></a>
+                    </div>
                     <div class="col">
                         <a>Discount Rate<input id="xdr" type="number" class="form-control" placeholder="0.00" name="xdr" required></a>
                     </div>
@@ -55,6 +68,11 @@
                 </div>
             </form>
         </div>
+
+        
+        
+        
+    </div>
     <hr>
     <div id="tagscloud" class="container">
         <h2 id="nHeader">Net Profit Value: <span id="NPV">0</span></h2>
@@ -78,11 +96,15 @@
     </div>
     </div>
 
+
+    
+
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/newForm.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

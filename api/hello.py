@@ -5,12 +5,21 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-
 def computeAvg(a,b,c,d,e,f):
     return ((a+b+c+d+e)/5)
 
 def netProfit(a, b, c, d, e, i):
     lst = [a, b, c, d, e]
+    dcilst = []
+    for num in range(len(lst)):
+        dci = lst[num] / (1 + i)**(num)
+        dcilst.append(dci)
+    NPV = round((sum(dcilst)), 2)
+    print("NPV = " + str(NPV))
+    return NPV
+
+def listCal(lst, rate):
+    i = rate
     dcilst = []
     for num in range(len(lst)):
         dci = lst[num] / (1 + i)**(num)
@@ -31,4 +40,15 @@ def npvMult():
     xDR = float(r["xdr"])
     # avg = computeAvg(x19, x18, x17, x16, x15, xDR)
     netProfitVal = netProfit(x19, x18, x17, x16, x15, xDR)
+    return jsonify(npv=netProfitVal,success=True,dRate=xDR)
+
+
+@app.route('/mnpv', methods = ['POST','GET'])
+def npvList():
+    r = request.get_json()
+    a = r["cFlows"].split(',')
+    a = [float(val) for val in a]
+    print(a);
+    xDR = float(r["xdr"])
+    netProfitVal = listCal(a, xDR)
     return jsonify(npv=netProfitVal,success=True,dRate=xDR)
