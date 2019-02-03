@@ -15,3 +15,4 @@ def npv(i):
         print("Project denied")
 
 npv(.04)
+
