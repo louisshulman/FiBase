@@ -13,16 +13,25 @@ $("#cashSubmit").click(function(e){
     var $forma = $("#cashForm");
     var formdata = getFormData($forma);
     $("#cashSubmit").hide();
+    console.log("Form data is: ");
+    console.log(formdata);
     $.post({
-        url: "http://1270.0.0.1:5000/npv",
+        url: "http://localhost:5000/npv",
+        beforeSend: function(request) {
+            request.setRequestHeader("Access-Control-Allow-Origin", "*");
+        },
         data: JSON.stringify(formdata),
         contentType: "application/json",
         dataType: "json",
-        function(response) {
-            console.log("Communication!");
-            $("span").append("hello");
-            $("#cashSubmit").show();
-            $("#tagscloud span").text("Your text here");
+        success: function(response) {
+            if (response["success"] == true) {
+                console.log("Communication!");
+                console.log(response["npv"]);
+                var npvVal = response["npv"];
+                $("span").append("hello");
+                $("#cashSubmit").show();
+                $("#tagscloud span").text(npvVal);
+            }
         }
     });
     e.preventDefault();
