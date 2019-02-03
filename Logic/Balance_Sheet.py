@@ -20,9 +20,23 @@ longterm_debt = input()
 Stock = input()
 
 Assets = []
-def Assets(plug):
+Liabilities = []
+Equity = []
+def Assetsplug(plug):
     Assets.append(plug)
-    print(Assets)
-def Liabilities(plug):
-    c
-def Equity(plug):
+
+def Liabilitiesplug(plug):
+    Liabilities.append(plug)
+
+def Equityplug(plug):
+    Equity.append(plug)
+
+def BalanceSheet():
+    Sass = sum(Assets)
+    Sliab = sum(Liabilities)
+    Sequity = sum(Equity)
+    if Sass == (Sliab + Sequity):
+        print("Assets = $" + str(Sass))
+        print("Liabilities = $" + str(Sliab))
+        print("Equity = $" + str(Sequity))
+        print("Books are balanced")
