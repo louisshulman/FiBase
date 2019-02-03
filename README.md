@@ -3,9 +3,9 @@ A website hosting some financial calculations
 Hackathon Project at Auburn Hacks 2019
 
 
-This project is not deployed
+The API is not deployed to a separate server
 -To test/ use it (On Windows)
-1) Run the flask app 
+1) Run the flask app locally
     Navigate to the API Folder
     Activate the virtual environment (flaskenv)
     Run Flask
