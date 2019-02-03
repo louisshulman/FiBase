@@ -8,13 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Font -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
 
-    <title>FiBase!</title>
+    <title>FiBase- Home</title>
   </head>
 
 <body>
@@ -28,7 +29,7 @@
             <div class="navbar-nav">
             <a class="nav-item nav-link" href="index.html">Home</a>
             <a class="nav-item nav-link" href="#info">Info</a>
-            <a class="nav-item nav-link" href="pages/team.html">Team</a>
+            <a class="nav-item nav-link" href="pages/team.html">About</a>
             </div>
         </div>
 </nav>
@@ -36,28 +37,34 @@
 <div class="main">
     <div class="formsss">
         <div id="Assets" class="container">
-            <h2>Enter The Net Cash Flow For The Past Five Years</h2>
+            <h2 id="fHeader">Enter the Net Cash Flow For the Past Five Years</h2>
             <form id="cashForm" class="form-group"> 
                 <div class="form-row">
-                    <a>2019<input id="x2019" type="number" class="form-control" placeholder="0" name="x2019"></a>
+                    <div class="col">
+                        <a>2019<input id="x2019" type="number" class="form-control" placeholder="0" name="x2019" required></a>
+                    </div>
+                    <div class="col">
+                        <a>2018<input id="x2018" type="number" class="form-control" placeholder="0" name="x2018" required></a>
+                    </div>
+                    <div class="col">
+                        <a>2017<input id="x2017" type="number" class="form-control" placeholder="0" name="x2017" required></a>
+                    </div>
                 </div>
                 <div class="form-row">
-                    <a>2018<input id="x2018" type="number" class="form-control" placeholder="0" name="x2018"></a>
+                    <div class="col">
+                        <a>2016<input id="x2016" type="number" class="form-control" placeholder="0" name="x2016" required></a>
+                    </div>
+                    <div class="col">
+                        <a>2015<input id="x2015" type="number" class="form-control" placeholder="0" name="x2015" required></a>
+                    </div>
+                    <div class="col">
+                        <a>Discount Rate<input id="xdr" type="number" class="form-control" placeholder="0.00" name="xdr" required></a>
+                    </div>
                 </div>
                 <div class="form-row">
-                    <a>2017<input id="x2017" type="number" class="form-control" placeholder="0" name="x2017"></a>
-                </div>
-                <div class="form-row">
-                    <a>2016<input id="x2016" type="number" class="form-control" placeholder="0" name="x2016"></a>
-                </div>
-                <div class="form-row">
-                    <a>2015<input id="x2015" type="number" class="form-control" placeholder="0" name="x2015"></a>
-                </div>
-                <div class="form-row">
-                    <a>Discount Rate<input id="xdr" type="number" class="form-control" placeholder="0.00" name="xdr"></a>
-                </div>
-                <div class="form-row">
-                    <button id="cashSubmit" class="btn btn-outline-secondary">Submit</button>
+                    <div class="col">
+                        <button id="cashSubmit" class="btn btn-primary"><i class="far fa-paper-plane"></i> Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -67,21 +74,25 @@
         
     </div>
     <hr>
-    <div id="tagscloud">
-        <h2>Net Profit Value: <span id="NPV">0</span></h2>
+    <div id="tagscloud" class="container">
+        <h2 id="nHeader">Net Profit Value: <span id="NPV">0</span></h2>
         <div id="tcloudA">
         <h3><span id="opinionA"></span></h3>
-        </div>
-        <div id="tcloudB">
-            <h3><span id="opinionB"></span></h3>
         </div>
     </div>
 
     <hr>
     <div id="info">
-        <h2>Information</h2>
-        <h4>What is Net Profit Value</h4>
-        <p>Info about this stuff</p>
+        <h2 id="iHeader">Information</h2>
+        <h4>What is Cash Flow?</h4>
+        <p>
+            <strong>Cash Flow:</strong> Incomings and outgoings of cash. Input outgoing cash flows as negative and the outgoing as positive.
+            <br>
+        </p>
+        <h4>What is Net Profit Value?</h4>
+        <p>
+            <strong>NPV:</strong> The present value of all cash flows. A project will give back desired rate of returns only if npv is positive.
+        </p>
     </div>
     </div>
 

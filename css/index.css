@@ -18,19 +18,30 @@ body {
     text-align: center;
 }
 
-
-#team {
-    text-align: center;
-    display: inline-block;
-    margin: 100px auto;
+#cashSubmit {
+    margin-top: 10px;
 }
 
+
+
 #tagscloud {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 #info {
     padding-bottom: 50px;
 }
 
+#fHeader {
+    text-align: center;
+}
+
+#nHeader {
+    text-align: center;
+}
+
+#iHeader {
+    text-align: center;
+}
 

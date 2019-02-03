@@ -4,3 +4,14 @@
 }
 
 
+#team {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+#pInfo {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
