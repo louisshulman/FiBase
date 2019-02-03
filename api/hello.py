@@ -1,10 +1,28 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS 
 
-
 app = Flask(__name__)
 CORS(app)
 
+def listCal(lst, i):
+    dcilst = []
+    for num in range(len(lst)):
+        dci = lst[num] / (1 + i)**(num)
+        dcilst.append(dci)
+    NPV = round((sum(dcilst)), 2)
+    print(f"NPV is {str(NPV)}")
+    return NPV
+
+@app.route('/mnpv', methods = ['POST','GET'])
+def npvList():
+    r = request.get_json()
+    a = r["cFlows"].split(',')
+    a = [float(val) for val in a]
+    print(f"Net Cash Flows are {a}");
+    xDR = float(r["xdr"])
+    print(f"Discount Rate is {xDR}")
+    netProfitVal = listCal(a, xDR)
+    return jsonify(npv=netProfitVal,success=True,dRate=xDR)
 
 def computeAvg(a,b,c,d,e,f):
     return ((a+b+c+d+e)/5)
