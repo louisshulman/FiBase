@@ -17,12 +17,6 @@ def netProfit(a, b, c, d, e, i):
         dcilst.append(dci)
     NPV = round((sum(dcilst)), 2)
     print("NPV = " + str(NPV))
-    # if NPV >= 0:
-    #     print("Project made the required annual rate of return of " + str(i) + "%")
-    #     print("Project go ahead approved")
-    # else:
-    #     print("Project did not make the required annual rate of return of " + str(i) + "%")
-    #     print("Project denied")
     return NPV
 
 @app.route('/npv', methods = ['POST','GET'])
