@@ -1,4 +1,4 @@
-nlst = [-100, 50, 40, 30, 20]
+nlst = []
 def npv(i):
     lst = nlst
     dcilst = []
