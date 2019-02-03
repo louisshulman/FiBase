@@ -24,7 +24,7 @@ $("#cashSubmit").click(function(e){
     console.log(formdata);
     $.post({
        // url: "http://localhost:5000/npv",
-        url: "https://126c306c.ngrok.io",
+        url: "http://126c306c.ngrok.io",
         beforeSend: function(request) {
             request.setRequestHeader("Access-Control-Allow-Origin", "*");
         },
