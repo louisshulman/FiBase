@@ -18,8 +18,7 @@ def netProfit(a, b, c, d, e, i):
     print("NPV = " + str(NPV))
     return NPV
 
-def listCal(lst, rate):
-    i = rate
+def listCal(lst, i):
     dcilst = []
     for num in range(len(lst)):
         dci = lst[num] / (1 + i)**(num)
