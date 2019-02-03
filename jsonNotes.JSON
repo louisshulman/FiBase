@@ -1,0 +1,13 @@
+sample JSON
+
+sample information {
+    "total assets": 500,
+    "total liabilities": 1000,
+    "total equity": 100
+}
+
+
+make sample JSON object or file
+within your program try to extract the information from the JSON 
+and use it as input into your program
+
