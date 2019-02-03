@@ -12,22 +12,18 @@ var getFormData = function($form) {
 $("#cashSubmit").click(function(e){
     var $forma = $("#cashForm");
     var formdata = getFormData($forma);
-    $(#"cashSubmit").fade();
-    // var jsonnn = JSON.stringify(formdata);
+    $("#cashSubmit").hide();
     $.post({
         url: "http://1270.0.0.1:5000/npv",
         data: JSON.stringify(formdata),
         contentType: "application/json",
         dataType: "json",
-        success: function(response) {
-            if (response["success"] == true) {
-                console.log("Communication!")
-            }
-            else {
-                alert(response['errorMessage'])
-            }
-            $(#"cashSubmit").show();
+        function(response) {
+            console.log("Communication!");
+            $("span").append("hello");
+            $("#cashSubmit").show();
+            $("#tagscloud span").text("Your text here");
         }
-    })
+    });
     e.preventDefault();
 });
