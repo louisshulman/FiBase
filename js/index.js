@@ -1,14 +1,15 @@
 // alert("This works!");
 
 function formSubmitted(){
-    var xx = document.getElementById("x").value;
-    var yy = document.getElementById("y").value;
-    var zz = document.getElementById("z").value;
-    var ww = document.getElementById("w").value;
-    console.log(xx + " " + yy + " " + zz + " " + ww + " ");
+    var cv19 = document.getElementById("2019").value;
+    var cv18 = document.getElementById("2018").value;
+    var cv17 = document.getElementById("2017").value;
+    var cv16 = document.getElementById("2016").value;
+    var cv15 = document.getElementById("2016").value;
+    console.log(cv15 + " " + cv16 + " " + cv17 + " " + cv18 + " " + cv19 + "");
     
 }
 
-document.getElementById("myForm").onsubmit = function(){formSubmitted()};
+document.getElementById("cashForm").onsubmit = function(){formSubmitted()};
 
 
