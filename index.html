@@ -17,115 +17,63 @@
     <title>FiBase!</title>
   </head>
 
-  <body>
+<body>
 
-    <nav id-="topNav" class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id-="topNav" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">FiBase</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#team">Team</a>
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="pages/team.html">Team</a>
             </div>
         </div>
-    </nav>
+</nav>
 
 <div class="main">
     <div class="formsss">
-        <p>Fill out the assets, liabilities, and equity forms and the functions will output financial data</p>
-
         <div id="Assets" class="container">
-            <h2>Enter The Assets</h2>
-            <form id="AssetsForm" class="form-group"> 
+            <h2>Enter The Net Cash Flow For The Past Five Years</h2>
+            <form id="cashForm" class="form-group"> 
                 <div class="form-row">
-                    <div class="col">
-                    <a>Enter Cash<input id="cash" type="number" class="form-control" placeholder="x" name="first_number"></a>
-                    </div>
-                    <div class="col">
-                    <a>Enter Equipment<input id="equipment" type="number" class="form-control" placeholder="y" name="first_number"></a>
-                    </div>
+                    <a>2019<input id="2019" type="number" class="form-control" placeholder="0" name="2019"></a>
                 </div>
                 <div class="form-row">
-                    <div class="col">
-                        <a>Enter Accounts Recievable<input id="accRec" type="number" class="form-control" placeholder="z" name="first_number"></a>
-                    </div>
-                    <div class="col">
-                        <a>Enter Supplies<input id="supplies" type="number" class="form-control" placeholder="w" name="first_number"></a>
-                    </div>
+                    <a>2018<input id="2018" type="number" class="form-control" placeholder="0" name="2018"></a>
                 </div>
-                    <button id="topform" type="submit" class="btn btn-outline-secondary">Submit</button>
+                <div class="form-row">
+                    <a>2017<input id="2017" type="number" class="form-control" placeholder="0" name="2017"></a>
+                </div>
+                <div class="form-row">
+                    <a>2016<input id="2016" type="number" class="form-control" placeholder="0" name="2016"></a>
+                </div>
+                <div class="form-row">
+                    <a>2015<input id="2015" type="number" class="form-control" placeholder="0" name="2015"></a>
+                </div>
+                <div class="form-row">
+                    <button id="cashSubmit" class="btn btn-outline-secondary">Submit</button>
+                </div>
             </form>
         </div>
 
-        <div id="Liabilities" class="container">
-            <h2>Enter The Liabilities</h2>
-            <form id="LiabilitiesForm" class="form-group"> 
-                <div class="form-row">
-                    <div class="col">
-                    <a>Enter Notes Payable<input id="nPayable" type="number" class="form-control" placeholder="x" name="first_number"></a>
-                    </div>
-                    <div class="col">
-                    <a>Enter Accounts Payable<input id="aPay" type="number" class="form-control" placeholder="y" name="first_number"></a>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <a>Enter ...<input id="LiC" type="number" class="form-control" placeholder="z" name="first_number"></a>
-                    </div>
-                    <div class="col">
-                        <a>Enter ...<input id="LiD" type="number" class="form-control" placeholder="w" name="first_number"></a>
-                    </div>
-                </div>
-                    <button id="topform" type="submit" class="btn btn-outline-secondary">Submit</button>
-            </form>
-        </div>
-
-        <div id="Equity" class="container">
-            <h2>Enter The Equity Values</h2>
-            <form id="EquityForm" class="form-group"> 
-                <div class="form-row">
-                    <div class="col">
-                    <a>Enter ...<input id="EqA" type="number" class="form-control" placeholder="x" name="first_number"></a>
-                    </div>
-                    <div class="col">
-                    <a>Enter ...<input id="EqB" type="number" class="form-control" placeholder="y" name="first_number"></a>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <a>Enter ...<input id="EqC" type="number" class="form-control" placeholder="z" name="first_number"></a>
-                    </div>
-                    <div class="col">
-                        <a>Enter ...<input id="EcD" type="number" class="form-control" placeholder="w" name="first_number"></a>
-                    </div>
-                </div>
-                    <button id="topform" type="submit" class="btn btn-outline-secondary">Submit</button>
-            </form>
-        </div>
         
-        <div id="team" class="container">      
-            <h2>Team</h2>
-            <div class="row">
-                <div class="col-md">
-                    <h3>Louis Shulman</h3>
-                    <img src="assets/placeholder-person.png">
-                </div>
-                <div class="col-md">
-                    <h3>Josh Chima</h3>
-                    <img src="assets/placeholder-person.png">
-                </div>
-            </div>
-        </div>
+        
+        
     </div>
+
+    <h2>Net Profit Value: <span id="NPV">0</span></h2>
+        <p>A good metric of deterning worthiness of investment for a project</p>
 </div>
     
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

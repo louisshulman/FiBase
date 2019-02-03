@@ -1,8 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
+
 
 app = Flask(__name__)
 
-@app.route('/hello/')
-@app.route('/hello/<name>')
-def hello(name=None):
-    return render_template('home.html', name=name)
+@app.route('/npv', methods = ['POST','GET'])
+def npvMult():
+    r = request.get_json()
+    foo = r["a"]+1
+    return jsonify(newA=foo)
