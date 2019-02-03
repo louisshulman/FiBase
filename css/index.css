@@ -13,6 +13,11 @@ body {
     background:rgba(255,255,255,0.5);
 }
 
+#formDes {
+    margin: auto;
+    text-align: center;
+}
+
 
 #team {
     text-align: center;
