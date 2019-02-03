@@ -31,6 +31,17 @@ $("#cashSubmit").click(function(e){
                 $("span").append("hello");
                 $("#cashSubmit").show();
                 $("#tagscloud span").text(npvVal);
+                var rate = response["dRate"];
+                if (npvVal >= 0) {    
+                    var adviceA = "Project made the required annual rate of return of " + rate + " %"; //use DR
+                    var adviceB = "Project go ahead approved";
+                }
+                else {
+                    var adviceA = "Project did not make the required annual rate of return of " + rate + " %"
+                    var adviceB = "Project denied";
+                }
+                $("#tcloudA span").text(adviceA);
+                $("#tcloudB span").text(adviceB);
             }
         }
     });
