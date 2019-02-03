@@ -1,0 +1,2 @@
+Cash Flow: Incomings and outgoings of cash. Input outgoing cash flows as negative and the outgoing as positive.
+NPV: The present value of all cash flows. A project will give back desired rate of returns only if npv is positive.
